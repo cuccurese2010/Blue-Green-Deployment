@@ -1,6 +1,8 @@
 # Blue-Green-Deployment
 Blue-green deployments involve running two versions of an application at the same time and moving production traffic from the old version to the new version. There are several ways to implement a blue-green deployment in OpenShift Container Platform.
 
+From CLI Create project demo: oc new-project demo
+
 From CLI Create application: oc new-app openshift/deployment-example:v1 --name=example-green
 
 From CLI Create application: oc new-app openshift/deployment-example:v2 --name=example-blue
